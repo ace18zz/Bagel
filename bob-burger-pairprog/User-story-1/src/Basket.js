@@ -16,6 +16,19 @@ class Basket {
 
     }
 
+    removeItem(item) {
+        if (this.basketItems.includes(item)) {
+            let indexItem = this.basketItems.indexOf(item)
+            this.basketItems.splice(indexItem, 1)
+
+            return this.basketItems
+
+        } else {                                        // item doesn't exist in basket 
+            return 'Sorry, this one does not exist in basket'
+        }
+
+    }
+
 }
 
 //important

@@ -1,9 +1,9 @@
 const { assertEquals } = require("./testing-framework.js");
 const Basket = require("../src/Basket.js");
 
-
-
-
+console.log('User Story 1 - Testing')
+console.log('======================')
+console.log(' ')
 console.log('Test 1')
 console.log('Check that number of items in basket has increased by 1')
 console.log(' ')
