@@ -21,17 +21,47 @@ expected = 1
 
 
 
-
-
 //act
 basket.addItem('bagel')
 
-
-
-actual = (basket.basketItems).length()
-
-
+actual = basket.basketItems.length
 
 
 //assert
 result = assertEquals(actual, expected)
+
+console.log(result)
+console.log('  ')
+
+
+
+
+console.log('Test 2')
+console.log('Basket should only accept string as an input')
+console.log(' ')
+
+
+
+
+
+
+//arrange
+const intbasket = new Basket();
+
+intbasket.addItem('    ')
+//intbasket.addItem()
+
+expected = 0
+
+
+
+//act
+//basket.addItem('bagel')
+
+actual = intbasket.basketItems.length
+
+
+//assert
+result = assertEquals(actual, expected)
+
+console.log(result)

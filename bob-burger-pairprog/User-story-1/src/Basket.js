@@ -7,7 +7,12 @@ class Basket {
         this.basketItems = [];
     }
 
-    addItem() {
+    addItem(item) {
+
+        // is a string
+        if (typeof item === 'string' && item.trim().length > 0) {
+            this.basketItems.push(item);
+        }
 
     }
 
